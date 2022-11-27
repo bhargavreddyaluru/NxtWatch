@@ -2,7 +2,6 @@ import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import ThemeContext from '../../context/ThemeContext'
-import Home from '../Home'
 
 import {
   LoginForm,
@@ -49,7 +48,7 @@ class Login extends Component {
     return (
       <ThemeContext.Consumer>
         {value => {
-          const {theme, changeTheme} = value
+          const {theme} = value
           const url = theme
             ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png'
             : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png'

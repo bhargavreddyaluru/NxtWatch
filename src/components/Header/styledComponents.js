@@ -5,8 +5,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   background-color: ${props => (props.light ? '#ffffff' : '#212121')};
   justify-content: space-between;
-  padding: 18px 32px 20px 32px;
-  border: solid black 1px;
+  padding: 18px 32px 20px 38px;
   font-family: 'Roboto';
 `
 
